@@ -1,0 +1,46 @@
+.card {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.24);
+}
+
+.card,
+.card-header,
+.card-footer {
+    border: none;
+    /*border-radius: 0;*/
+    /*background-color: #B5B3B3;*/
+    background-color: transparent;
+    /*color: white;*/
+}
+
+.card-header,
+.card-footer {
+    padding: 1rem .5rem;
+}
+
+#location-icon{
+    padding-right: .5rem;
+}
+
+.card-block {
+    padding: 3rem;
+    color: gray;
+}
+
+.card-block,
+.card-footer {
+    text-align: center;
+    background-color: transparent;
+}
+
+p {
+    margin: .2rem;
+}
+
+p:not(.unit-label) {
+    text-transform: uppercase;
+}
+
+h1,
+p {
+    text-shadow: 2px 2px 5px rgba(0,0,0,.24);
+}
