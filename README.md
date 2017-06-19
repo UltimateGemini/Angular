@@ -1,5 +1,5 @@
 # Angular2
-Here are a few projects I created in Angular2. My first time using typescript and Angular2. 
+Here are a few projects I created in Angular2.
 
 
 #1.TO-DO App
