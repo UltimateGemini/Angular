@@ -1,5 +1,5 @@
 # Angular2
-Welcome, Here's a collection of Angular4 apps I built. Chronologically ordered by the most recent project above.
+Welcome, Here's a collection of my Angular2+ apps. Chronologically ordered by the most recent project above.
 
 
 ## Weather
