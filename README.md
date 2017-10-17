@@ -3,7 +3,7 @@ Welcome, Here's a collection of my Angular2+ apps. Chronologically ordered by th
 
 
 ## Weather
-This app demonstrates the current weather based on your location. Weather data is provided by an online API. Uses Google geolocation API and features changable animated icons and background color based on current weather. 
+This app demonstrates the current weather based on your location. Weather data is provided by an online API. Uses Google geolocation API and features changeable animated icons and background color based on current weather. 
 
 ### Built With
 * [Components](https://angular.io/api/core/Component)
