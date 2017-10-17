@@ -1,6 +1,5 @@
 # Angular2
-Here are a few projects I created in Angular2.
-
+Welcome, Here's a collection of Angular4 apps I built. Chronologically ordered by the most recent project above.
 
 #1.TO-DO App
 
