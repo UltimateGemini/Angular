@@ -13,5 +13,10 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngFor="let item of shoppingListRef$ | async" (click)="selectShoppingItem(item)">
+      <h2>Item Name: <b>{{item.itemName}}</b></h2>
+      <h4>Amount: {{item.itemNumber}}</h4>
+    </ion-item>
+  </ion-list>
 </ion-content>
