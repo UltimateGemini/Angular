@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var SharedModule = (function () {
-    function SharedModule() {
+var BugListComponent = (function () {
+    function BugListComponent() {
     }
-    SharedModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            declarations: [],
-            exports: [common_1.CommonModule]
+    BugListComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'bug-list',
+            templateUrl: 'bug-list.component.html',
+            styleUrls: ['bug-list.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], SharedModule);
-    return SharedModule;
+    ], BugListComponent);
+    return BugListComponent;
 }());
-exports.SharedModule = SharedModule;
-//# sourceMappingURL=shared.module.js.map
+exports.BugListComponent = BugListComponent;
+//# sourceMappingURL=bug-list.component.js.map
