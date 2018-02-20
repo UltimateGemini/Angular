@@ -1,6 +1,8 @@
-import {Component, OnInit} from "@angular/core";
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {Component, Input, OnInit} from "@angular/core";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {forbiddenStringValidator} from "../../shared/validation/forbidden-string.validator";
+import {BugService} from "../service/bug.service";
+import {Bug} from "../model/bug";
 
 
 @Component({
@@ -13,8 +15,9 @@ export class BugDetailComponent implements OnInit {
 
     private modalId = "bugModal";
     private bugForm: FormGroup;
+    @Input() currentBug = new Bug (null, null, null, null, null, null, null, null);
 
-    constructor(private formB: FormBuilder) {
+    constructor(private formB: FormBuilder, private bugService: BugService) {
 
     }
 
@@ -23,13 +26,6 @@ export class BugDetailComponent implements OnInit {
     }
 
     configureForm() {
-        // this.bugForm = new FormGroup({
-        //     title: new FormControl(null, [Validators.required, forbiddenStringValidator(/puppy/i)]),
-        //     status: new FormControl(1, Validators.required),
-        //     severity: new FormControl(1, Validators.required),
-        //     description: new FormControl(null, Validators.required)
-        // });
-
         this.bugForm = this.formB.group({
             title: [null, [Validators.required, forbiddenStringValidator(/puppy/i)]],
             status: [1, Validators.required],
@@ -39,6 +35,14 @@ export class BugDetailComponent implements OnInit {
     }
 
     submitForm() {
+        this.addBug();
+    }
 
+    addBug() {
+        this.currentBug.title = this.bugForm.value["title"];
+        this.currentBug.status = this.bugForm.value["status"];
+        this.currentBug.severity = this.bugForm.value["severity"];
+        this.currentBug.description = this.bugForm.value["description"];
+        this.bugService.addBug(this.currentBug);
     }
 }
