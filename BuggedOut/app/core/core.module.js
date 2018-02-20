@@ -12,6 +12,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var core_1 = require("@angular/core");
+var firebase_config_service_1 = require("./service/firebase-config.service");
 var CoreModule = (function () {
     function CoreModule(parentModule) {
         if (parentModule) {
@@ -21,7 +22,9 @@ var CoreModule = (function () {
     CoreModule.forRoot = function () {
         return {
             ngModule: CoreModule,
-            providers: []
+            providers: [
+                firebase_config_service_1.FirebaseConfigService
+            ]
         };
     };
     CoreModule = __decorate([
