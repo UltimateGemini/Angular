@@ -4,8 +4,17 @@ import {Component} from '@angular/core';
     selector: 'my-app',
     template: `
         <navbar></navbar>
-        <router-outlet></router-outlet>
-    `
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    `,
+    styles: [
+        `
+            .container {
+                margin-top: 3rem;
+            }
+        `
+    ]
 })
 export class AppComponent {
 }
