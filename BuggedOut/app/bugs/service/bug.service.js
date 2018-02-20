@@ -12,15 +12,16 @@ var core_1 = require("@angular/core");
 var firebase_config_service_1 = require("../../core/service/firebase-config.service");
 var Observable_1 = require("rxjs/Observable");
 var BugService = (function () {
-    function BugService(fbSevice) {
-        this.fbSevice = fbSevice;
-        this.bugsDbRef = this.fbSevice.database.ref('/bugs');
+    function BugService(fbService) {
+        this.fbService = fbService;
+        this.bugsDbRef = this.fbService.database.ref('/bugs');
     }
     BugService.prototype.getAddedBugs = function () {
         var _this = this;
         return Observable_1.Observable.create(function (obs) {
             _this.bugsDbRef.on('child_added', function (bug) {
-                obs.next(bug.val());
+                var newBug = bug.val();
+                obs.next(newBug);
             }, function (err) {
                 obs.throw(err);
             });

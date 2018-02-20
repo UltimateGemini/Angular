@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {BugService} from "../service/bug.service";
+import {Bug} from "../model/bug";
 
 
 @Component({
@@ -11,18 +12,20 @@ import {BugService} from "../service/bug.service";
 
 export class BugListComponent implements OnInit {
 
-    constructor(private bugService: BugService) {
+    private bugs: Bug[] = [];
 
+    constructor(private bugService: BugService) {
     }
 
-    ngOnInit () {
+    ngOnInit() {
         this.getAddedBugs();
     }
 
     getAddedBugs() {
         this.bugService.getAddedBugs()
             .subscribe(bug => {
-                    console.log(bug);
+                    this.bugs.push(bug);
+                    console.log(this.bugs);
                 },
                 err => {
                     console.error("Unable to get added bug!", err);

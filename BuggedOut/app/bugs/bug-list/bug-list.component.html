@@ -3,31 +3,38 @@
         <h2>Logged Bugs</h2>
     </div>
     <div class="col-xs-6 text-xs-right">
-        <button class="btn btn-success btn-lg"><i class="fa fa-plus" aria-hidden="true"></i>Add Bug</button>
+        <button class="btn btn-success btn-lg" [attr.data-target]=" '#' +  bugDetail.modalId" data-toggle="modal">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Add Bug
+        </button>
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
         <table class="table">
             <thead>
-                <tr>
-                    <th>TITLE</th>
-                    <th>STATUS</th>
-                    <th>DESCRIPTION</th>
-                    <th>LOGGED BY</th>
-                    <th>DATE</th>
-                </tr>
+            <tr>
+                <th>TITLE</th>
+                <th>STATUS</th>
+                <th>SEVERITY</th>
+                <th>DESCRIPTION</th>
+                <th>LOGGED BY</th>
+                <th>DATE</th>
+            </tr>
             </thead>
 
             <tbody>
-            <tr>
-                <td>Test Bug</td>
-                <td>Logged</td>
-                <td>Deadly</td>
-                <td>John Doe</td>
-                <td>19th February 2018</td>
+            <tr *ngFor="let bug of bugs" [attr.data-target]=" '#' +  bugDetail.modalId" data-toggle="modal">
+                <td>{{bug.title}}</td>
+                <td>{{bug.status}}</td>
+                <td>{{bug.severity}}</td>
+                <td>{{bug.description}}</td>
+                <td>{{bug.createdBy}}</td>
+                <td>{{bug.createdDate}}</td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
+
+<bug-detail #bugDetail></bug-detail>

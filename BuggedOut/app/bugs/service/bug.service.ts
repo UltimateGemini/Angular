@@ -1,21 +1,23 @@
 import {Injectable} from "@angular/core";
 import {FirebaseConfigService} from "../../core/service/firebase-config.service";
 import {Observable} from "rxjs/Observable";
+import {Bug} from "../model/bug";
 
 
 @Injectable()
 export class BugService {
 
-    private bugsDbRef = this.fbSevice.database.ref('/bugs');
+    private bugsDbRef = this.fbService.database.ref('/bugs');
 
-    constructor(private fbSevice: FirebaseConfigService) {
+    constructor(private fbService: FirebaseConfigService) {
 
     }
 
     getAddedBugs(): Observable<any> {
         return Observable.create(obs => {
             this.bugsDbRef.on('child_added', bug => {
-                    obs.next(bug.val());
+                    const newBug = bug.val() as Bug;
+                    obs.next(newBug);
                 },
                 err => {
                     obs.throw(err);
