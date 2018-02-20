@@ -6,11 +6,15 @@ require('firebase/database');
 @Injectable()
 export class FirebaseConfigService {
 
-    private database: firebase.database.Database;
+    private _database: firebase.database.Database;
 
     constructor() {
         this.configureApp();
         this.configDatabase();
+    }
+
+    public get database () {
+        return this._database;
     }
 
     configureApp() {
@@ -18,6 +22,6 @@ export class FirebaseConfigService {
     }
 
     configDatabase () {
-        this.database = firebase.database();
+        this._database = firebase.database();
     }
 }
