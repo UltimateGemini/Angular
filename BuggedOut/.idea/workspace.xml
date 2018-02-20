@@ -11,24 +11,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bug-detail-component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bug-detail-component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="74">
+              <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#BugDetailComponent#0" expanded="false" />
+                <element signature="n#!!block;n#ngOnInit#0;n#BugDetailComponent#0" expanded="false" />
+                <element signature="n#!!block;n#configureForm#0;n#BugDetailComponent#0" expanded="false" />
+                <element signature="n#!!block;n#submitForm#0;n#BugDetailComponent#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bug.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bug.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bugs/service/bug.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#BugService#0" expanded="false" />
+                <element signature="n#!!block;n#getAddedBugs#0;n#BugService#0" expanded="false" />
+                <element signature="n#!!block;n#addBug#0;n#BugService#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +84,8 @@
         <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail.component.html" />
         <option value="$PROJECT_DIR$/app/shared/validation/forbidden-string.validator.ts" />
         <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail.component.css" />
-        <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts" />
         <option value="$PROJECT_DIR$/app/bugs/service/bug.service.ts" />
+        <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts" />
       </list>
     </option>
   </component>
@@ -194,12 +202,12 @@
       <workItem from="1519075220342" duration="108000" />
       <workItem from="1519075416726" duration="10446000" />
       <workItem from="1519136591800" duration="4569000" />
-      <workItem from="1519143462067" duration="7921000" />
+      <workItem from="1519143462067" duration="8186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23246000" />
+    <option name="totallyTimeSpent" value="23511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="672" y="310" width="993" height="682" extended-state="0" />
@@ -600,21 +608,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts">
+    <entry file="file://$PROJECT_DIR$/app/bugs/service/bug.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#BugService#0" expanded="false" />
+            <element signature="n#!!block;n#getAddedBugs#0;n#BugService#0" expanded="false" />
+            <element signature="n#!!block;n#addBug#0;n#BugService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bugs/service/bug.service.ts">
+    <entry file="file://$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="74">
+          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#BugDetailComponent#0" expanded="false" />
+            <element signature="n#!!block;n#ngOnInit#0;n#BugDetailComponent#0" expanded="false" />
+            <element signature="n#!!block;n#configureForm#0;n#BugDetailComponent#0" expanded="false" />
+            <element signature="n#!!block;n#submitForm#0;n#BugDetailComponent#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
