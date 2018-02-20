@@ -1,7 +1,7 @@
 {
     "name": "angular2-skeleton",
     "version": "1.0.0",
-    "description": "Bugged Out",
+    "description": "Bug Tracker",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "lite": "lite-server",
