@@ -14,6 +14,7 @@ var bug_list_component_1 = require("./bug-list/bug-list.component");
 var bug_routing_module_1 = require("./bug-routing.module");
 var bug_service_1 = require("./service/bug.service");
 var bug_detail_component_1 = require("./bug-detail/bug-detail-component");
+var forms_1 = require("@angular/forms");
 var BugModule = (function () {
     function BugModule() {
     }
@@ -21,7 +22,8 @@ var BugModule = (function () {
         core_1.NgModule({
             imports: [
                 shared_module_1.SharedModule,
-                bug_routing_module_1.BugRoutingModule
+                bug_routing_module_1.BugRoutingModule,
+                forms_1.ReactiveFormsModule
             ],
             declarations: [
                 bug_list_component_1.BugListComponent,
