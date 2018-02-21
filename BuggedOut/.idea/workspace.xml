@@ -14,8 +14,40 @@
       <file leaf-file-name="bug-list.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bugs/bug-list/bug-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="199">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/constant/constants.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.pipe.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/pipe/status.pipe.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shared.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/shared.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -40,7 +72,6 @@
         <option value="$PROJECT_DIR$/app/main.ts" />
         <option value="$PROJECT_DIR$/app/main.js.map" />
         <option value="$PROJECT_DIR$/app/bugs/bugs.module.ts" />
-        <option value="$PROJECT_DIR$/app/shared/shared.module.ts" />
         <option value="$PROJECT_DIR$/app/bugs/bug-list/bug.component.ts" />
         <option value="$PROJECT_DIR$/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/app/bugs/bug-routing.module.ts" />
@@ -65,6 +96,9 @@
         <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.ts" />
         <option value="$PROJECT_DIR$/app/bugs/service/bug.service.ts" />
         <option value="$PROJECT_DIR$/app/bugs/bug-list/bug-list.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/constant/constants.ts" />
+        <option value="$PROJECT_DIR$/app/shared/pipe/status.pipe.ts" />
+        <option value="$PROJECT_DIR$/app/shared/shared.module.ts" />
         <option value="$PROJECT_DIR$/app/bugs/bug-list/bug-list.component.html" />
       </list>
     </option>
@@ -82,8 +116,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="672" />
-    <option name="y" value="310" />
+    <option name="x" value="678" />
+    <option name="y" value="412" />
     <option name="width" value="993" />
     <option name="height" value="682" />
   </component>
@@ -125,22 +159,7 @@
               <item name="BuggedOut" type="b2602c69:ProjectViewProjectNode" />
               <item name="BuggedOut" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bugs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bug-list" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BuggedOut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuggedOut" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bugs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BuggedOut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuggedOut" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bugs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shared" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -198,15 +217,15 @@
       <workItem from="1519075416726" duration="10446000" />
       <workItem from="1519136591800" duration="4569000" />
       <workItem from="1519143462067" duration="8186000" />
-      <workItem from="1519178061862" duration="2814000" />
+      <workItem from="1519178061862" duration="3338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26325000" />
+    <option name="totallyTimeSpent" value="26849000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="672" y="310" width="993" height="682" extended-state="0" />
+    <frame x="678" y="412" width="993" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -289,6 +308,10 @@
         <option value="$PROJECT_DIR$/app/bugs/bug-detail/bug-detail-component.js" />
         <option value="$PROJECT_DIR$/app/shared/validation/forbidden-string.validator.js" />
         <option value="$PROJECT_DIR$/app/shared/validation/forbidden-string.validator.js.map" />
+        <option value="$PROJECT_DIR$/app/shared/constant/constants.js" />
+        <option value="$PROJECT_DIR$/app/shared/constant/constants.js.map" />
+        <option value="$PROJECT_DIR$/app/shared/pipe/status.pipe.js.map" />
+        <option value="$PROJECT_DIR$/app/shared/pipe/status.pipe.js" />
       </list>
     </option>
   </component>
@@ -310,7 +333,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#BugDetailComponent#0" expanded="false" />
             <element signature="n#!!block;n#ngOnInit#0;n#BugDetailComponent#0" expanded="false" />
           </folding>
@@ -333,7 +356,7 @@
         <state relative-caret-position="231">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#BugDetailComponent#0" expanded="false" />
             <element signature="n#!!block;n#ngOnInit#0;n#BugDetailComponent#0" expanded="false" />
           </folding>
@@ -435,13 +458,6 @@
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/shared.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app-routing.module.ts">
@@ -576,6 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,17 +658,43 @@
         <state relative-caret-position="503">
           <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#BugDetailComponent#0" expanded="false" />
             <element signature="n#!!block;n#ngOnInit#0;n#BugDetailComponent#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/constant/constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/pipe/status.pipe.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/bugs/bug-list/bug-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="199">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding />
         </state>
       </provider>
