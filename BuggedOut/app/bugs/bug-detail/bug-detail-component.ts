@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {forbiddenStringValidator} from "../../shared/validation/forbidden-string.validator";
 import {BugService} from "../service/bug.service";
 import {Bug} from "../model/bug";
+import {SEVERITY, STATUS} from "../../shared/constant/constants";
 
 
 @Component({
@@ -15,13 +16,23 @@ export class BugDetailComponent implements OnInit {
 
     private modalId = "bugModal";
     private bugForm: FormGroup;
-    @Input() currentBug = new Bug (null, null, 1, 1, null, null, null, null);
+
+    private statuses = STATUS;
+    private severites = SEVERITY;
+
+    private statusArr: string[] =[];
+    private severityArr: string[] =[];
+
+
+    @Input() currentBug = new Bug (null, null, this.statuses.Logged, this.severites.Severe, null, null, null, null);
 
     constructor(private formB: FormBuilder, private bugService: BugService) {
 
     }
 
     ngOnInit() {
+        this.statusArr = Object.keys(this.statuses).filter(Number);
+        this.severityArr = Object.keys(this.severites).filter(Number);
         this.configureForm();
     }
 
@@ -75,11 +86,11 @@ export class BugDetailComponent implements OnInit {
     }
 
     refreshForm() {
-        this.bugForm.reset({status: 1, severity: 1});
+        this.bugForm.reset({status: this.statuses.Logged, severity: this.severites.Severe});
         this.cleanBug();
     }
 
     cleanBug() {
-        this.currentBug = new Bug(null, null, 1, 1, null, null, null, null);
+        this.currentBug = new Bug(null, null, this.statuses.Logged, this.severites.Severe, null, null, null, null);
     }
 }
