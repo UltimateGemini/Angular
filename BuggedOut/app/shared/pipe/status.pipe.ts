@@ -1,7 +1,6 @@
 import {Pipe, PipeTransform} from "@angular/core";
 import {STATUS} from "../constant/constants";
 
-
 @Pipe({
     name: 'status'
 })
