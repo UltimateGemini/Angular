@@ -1,4 +1,4 @@
-# Angular2
+# Angular 2
 Welcome, Here's a collection of my Angular 2-5 projects. Chronologically ordered by the most recent project above.
 
 ## Bugged Out
