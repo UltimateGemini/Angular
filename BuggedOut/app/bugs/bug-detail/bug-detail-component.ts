@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {forbiddenStringValidator} from "../../shared/validation/forbidden-string.validator";
 import {BugService} from "../service/bug.service";
@@ -23,8 +23,7 @@ export class BugDetailComponent implements OnInit {
     private statusArr: string[] =[];
     private severityArr: string[] =[];
 
-
-    @Input() currentBug = new Bug (null, null, this.statuses.Logged, this.severites.Severe, null, null, null, null);
+    currentBug = new Bug (null, null, this.statuses.Logged, this.severites.Severe, null, null, null, null);
 
     constructor(private formB: FormBuilder, private bugService: BugService) {
 
@@ -71,8 +70,6 @@ export class BugDetailComponent implements OnInit {
         } else {
             this.addBug();
         }
-
-        this.refreshForm();
     }
 
     addBug() {
@@ -86,7 +83,7 @@ export class BugDetailComponent implements OnInit {
     }
 
     refreshForm() {
-        this.bugForm.reset({status: this.statuses.Logged, severity: this.severites.Severe});
+        // this.bugForm.reset({status: this.statuses.Logged, severity: this.severites.Severe});
         this.cleanBug();
     }
 
