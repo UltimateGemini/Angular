@@ -2,7 +2,7 @@
 Welcome, Here's a collection of my Angular 2-5 projects. Chronologically ordered by the most recent project above.
 
 ## Bugged Out
-This a simple C.R.U.D list. Bugs can be added and you can give them a severity level, description and as well as write a descripton of the bug. It saves the date you logged it an and the person who logged it.
+This a simple C.R.U.D list. Bugs can be added by name and you can give them a severity level and as well as write a descripton of the bug. It saves the date you logged it an and the person who logged it.
 
 ### Built With
 * [Firebase](https://firebase.google.com/)
