@@ -1,20 +1,22 @@
 # Angular2
-Welcome, Here's a collection of my Angular2+ apps. Chronologically ordered by the most recent project above.
+Welcome, Here's a collection of my Angular 2-5 projects. Chronologically ordered by the most recent project above.
 
 ## ShoppingList
-This a simple C.R.U.D shopping list. Items can be added to a shopping list then they can be edited or deleted from the lsit.
+This a simple C.R.U.D list. Bugs can be added and you can give them a severity level, description and as well as write a descripton of the bug. It saves the date you logged it an and the person who logged it.
 
 ### Built With
-* [Ionic3](https://ionicframework.com/)
-* [Cordova](https://cordova.apache.org/)
-* [AngularFire2](https://github.com/angular/angularfire2)
 * [Firebase](https://firebase.google.com/)
-* [RxJs](http://reactivex.io/rxjs/)
+* [OnInit](https://angular.io/api/core/OnInit)
+* [Components](https://angular.io/api/core/Component)
+* [Services](https://angular.io/tutorial/toh-pt4)
+* [Pipes](https://angular.io/guide/pipes)
 * [Observable](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html)
+* [RxJs](http://reactivex.io/rxjs/)
 
 
+![alt text](https://www.noelfranceschi.com/angular2-apps/Buggedout.png)
 
-![alt text](https://www.noelfranceschi.com/angular2-apps/shoppingList.png)
+
 
 
 ## Weather
@@ -35,7 +37,6 @@ This app demonstrates the current weather based on your location. Weather data i
 * [Pipe](https://angular.io/api/core/Pipe)
 * [RxJs](http://reactivex.io/rxjs/)
 * [Observable](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html)
-
 
 
 ![alt text](https://www.noelfranceschi.com/angular2-apps/weather.png)
